@@ -9,7 +9,7 @@ package javaweek7;
  *
  * @author Cristiano
  */
-public class Employee 
+public abstract class Employee 
 {
     protected String name;
     protected int hours, holiday;
@@ -34,15 +34,12 @@ public class Employee
         if(hrs >= 0 && hrs <=40)
         {
             hours=hrs;
-            return true;
+            return true; 
         }
         return false;
     }
     
-    public double getYearlySalary()
-    {
-        return pay;
-    }
+    public abstract double getYearlySalary();    
     
     public boolean bookHoliday(int numDays)
     {

@@ -16,14 +16,15 @@ public class JavaWeek7 {
      */
     public static void main(String[] args) 
     {
-        Employee e = new Employee("Meh", 40, 25, 30000);
+        
         Manager m = new Manager(" Bleh", 40, 30,60000,25);
-        Admin a = new Admin("LALAla",40, 20, 25000 );
+        Admin a = new Admin("LALAla",40, 20, 25000 );        
         a.setManager(m);
         
-        System.out.println(e.getDetails());
+        
         System.out.println(m.getDetails());
         System.out.println(a.getDetails());
+      
         
     }
     

@@ -16,6 +16,11 @@ public class Admin extends Employee
     {
         super(nameIn, hrs, hol, payIn);
     }
+    @Override
+    public double getYearlySalary()
+    {
+        return pay;
+    }
     
     public Manager getManager()
     {
@@ -26,6 +31,7 @@ public class Admin extends Employee
     {
         assignedManager=managerIn;
     }
+    @Override
     public String getDetails()
     {
         String ret= super.getDetails();
